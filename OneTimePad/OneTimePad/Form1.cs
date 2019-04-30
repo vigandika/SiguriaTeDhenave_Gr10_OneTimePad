@@ -21,13 +21,13 @@ namespace OneTimePad
         {
             byte[] plaintextiBytes = Encoding.Unicode.GetBytes(txtPlaintexti.Text);
 
-            byte[] celesi = null;
+            byte[] celesi = gjeneroCelesin(plaintextiBytes.Length);
 
             txtCelesi.Text = Convert.ToBase64String(celesi);
 
             byte[] ciphertexti = enkripto(plaintextiBytes, celesi);
 
-            txtCiphertexti.Text = Convert.ToBase64String(inArray: ciphertexti);
+            txtCiphertexti.Text = Convert.ToBase64String(ciphertexti);
 
             byte[] ciphertextiFromBase64 = Convert.FromBase64String(txtCiphertexti.Text);
 
@@ -46,5 +46,17 @@ namespace OneTimePad
             return ciphertextiByte;
         }
 
+        public static byte[] gjeneroCelesin(int length)
+        {
+            Random randObj = new Random();
+            int seed = randObj.Next();
+            var random = new Random(seed);
+
+            var celesiByte = new byte[length];
+
+            random.NextBytes(celesiByte);
+
+            return celesiByte;
+        }
     }
 }
