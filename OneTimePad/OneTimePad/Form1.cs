@@ -16,5 +16,35 @@ namespace OneTimePad
         {
             InitializeComponent();
         }//test
+
+        private void btnEnkripto_Click(object sender, EventArgs e)
+        {
+            byte[] plaintextiBytes = Encoding.Unicode.GetBytes(txtPlaintexti.Text);
+
+            byte[] celesi = null;
+
+            txtCelesi.Text = Convert.ToBase64String(celesi);
+
+            byte[] ciphertexti = enkripto(plaintextiBytes, celesi);
+
+            txtCiphertexti.Text = Convert.ToBase64String(inArray: ciphertexti);
+
+            byte[] ciphertextiFromBase64 = Convert.FromBase64String(txtCiphertexti.Text);
+
+            txtDekriptuar.Text = null;
+        }
+
+        public static byte[] enkripto(byte[] texti, byte[] celesi)
+        {
+            var ciphertextiByte = new byte[texti.Length];
+            for (int i = 0; i < texti.Length; i++)
+            {
+                var xor = (int)texti[i] ^ (int)celesi[i];
+
+                ciphertextiByte[i] = (byte)xor;
+            }
+            return ciphertextiByte;
+        }
+
     }
 }
