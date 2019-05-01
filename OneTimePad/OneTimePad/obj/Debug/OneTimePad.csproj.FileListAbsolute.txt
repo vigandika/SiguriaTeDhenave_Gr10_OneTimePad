@@ -8,3 +8,13 @@ C:\Users\Admin\Desktop\Git\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePa
 C:\Users\Admin\Desktop\Git\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\obj\Debug\OneTimePad.exe
 C:\Users\Admin\Desktop\Git\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\obj\Debug\OneTimePad.pdb
 C:\Users\Admin\Desktop\Git\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\obj\Debug\OneTimePad.Form1.resources
+C:\Users\PC\Desktop\GitHub\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\bin\Debug\OneTimePad.exe.config
+C:\Users\PC\Desktop\GitHub\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\bin\Debug\OneTimePad.exe
+C:\Users\PC\Desktop\GitHub\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\bin\Debug\OneTimePad.pdb
+C:\Users\PC\Desktop\GitHub\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\obj\Debug\OneTimePad.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\GitHub\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\obj\Debug\OneTimePad.Form1.resources
+C:\Users\PC\Desktop\GitHub\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\obj\Debug\OneTimePad.Properties.Resources.resources
+C:\Users\PC\Desktop\GitHub\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\obj\Debug\OneTimePad.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\GitHub\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\obj\Debug\OneTimePad.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\GitHub\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\obj\Debug\OneTimePad.exe
+C:\Users\PC\Desktop\GitHub\SiguriaTeDhenave_Gr10_OneTimePad\OneTimePad\OneTimePad\obj\Debug\OneTimePad.pdb

@@ -15,7 +15,7 @@ namespace OneTimePad
         public Form1()
         {
             InitializeComponent();
-        }//test
+        }
 
         private void btnEnkripto_Click(object sender, EventArgs e)
         {
@@ -57,6 +57,28 @@ namespace OneTimePad
             random.NextBytes(celesiByte);
 
             return celesiByte;
+        }
+
+        private void btnDekripto_Click(object sender, EventArgs e)
+        {
+            byte[] ciphertextiBytes = Convert.FromBase64String(txtCiphertexti.Text);
+
+            byte[] celesi = Convert.FromBase64String(txtCelesi.Text);
+
+            byte[] textiDekriptuar = dekripto(ciphertextiBytes, celesi);
+
+            txtDekriptuar.Text = Encoding.Unicode.GetString(textiDekriptuar);
+        }
+        public static byte[] dekripto(byte[] ciphertexti, byte[] celesi)
+        {
+            var dekriptuarByte = new byte[ciphertexti.Length];
+            for (int i = 0; i < ciphertexti.Length; i++)
+            {
+                var xor = (int)ciphertexti[i] ^ (int)celesi[i];
+
+                dekriptuarByte[i] = (byte)xor;
+            }
+            return dekriptuarByte;
         }
     }
 }
